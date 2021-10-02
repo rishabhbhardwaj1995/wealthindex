@@ -16,7 +16,7 @@ st.set_page_config(layout="wide")
 
 
 st.sidebar.header("Wealth Index Quintile")
-wealth_index_quintile = st.sidebar.multiselect('Wealth Index Quintile from 1 to 5', [1,2,3,4,5], default = [5], key = 'wealth_index')
+wealth_index_quintile = st.sidebar.multiselect('Wealth Index Quintile from 1 to 5', [1,2,3,4,5], default = [5,1], key = 'wealth_index')
 
 st.sidebar.header("Rural/Urban")
 urban_rural = st.sidebar.selectbox('Rural or Urban', list(df['Rural/Urban'].unique()), key = 'rural_urban')
