@@ -5,8 +5,8 @@ import plotly.express as px
 import pandasql as ps
 
 
-df= pd.read_csv(r'final_pwc_file.csv')
-
+url="https://raw.githubusercontent.com/rishabhbhardwaj1995/wealthindex/main/df.csv"
+df =pd.read_csv(url)
 
 df['Rural_Urban'] = df['Rural/Urban']
 
