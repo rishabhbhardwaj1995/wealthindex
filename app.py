@@ -311,6 +311,9 @@ Tehsil_dist =  pd.pivot_table(Tehsil_df_dist_3, values = 'Dist' , index = 'Tehsi
 
 
 st.title("Wealth Index and Sanitation Index Exploration Tool")
+
+
+
 st.header("Methodology Used For Wealth Index")
 st.write('Step 1: Variables were collated which could accurately represent wealth in a household. Following variables were selected:')
 st.write('''- House Condition = 'Good' ''')
@@ -431,4 +434,11 @@ with col4:
     st.plotly_chart(tehsil_level_histogram, use_column_width=True)
     
 
-    
+st.markdown("***")    
+st.header("Literature Review for Reference")
+st.write('''-https://dhsprogram.com/programming/wealth%20index/Steps_to_constructing_the_new_DHS_Wealth_Index.pdf ''')
+
+
+
+
+
