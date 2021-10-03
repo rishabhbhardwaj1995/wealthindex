@@ -312,8 +312,11 @@ Tehsil_dist =  pd.pivot_table(Tehsil_df_dist_3, values = 'Dist' , index = 'Tehsi
 
 st.title("Wealth Index and Sanitation Index Exploration Tool")
 
+st.header("Introduction")
+st.write('''The main objective of this tool is to understand the relationship between wealth and sanitary conditions in areas of a given state. Certain variables from the census data of 2011 were used to create a wealth index which works as the benchmark to compare economic conditions in different areas of the state. Similarly, a sanitation index was created to compare the sanitary conditions in different areas of the state. Both the indices were then broken into quintiles and the frequency distribution of these quintiles was analyzed at State, District, and Tehsil Level to understand the relationship between the 2 factors.
+''')
 
-
+st.markdown("***")
 st.header("Methodology Used For Wealth Index")
 st.write('Step 1: Variables were collated which could accurately represent wealth in a household. The following variables were selected:')
 st.write('''- House Condition = 'Good' ''')
@@ -435,7 +438,7 @@ with col4:
 
 st.markdown("***")    
 st.header("Literature Review for Reference")
-st.write('''-https://dhsprogram.com/programming/wealth%20index/Steps_to_constructing_the_new_DHS_Wealth_Index.pdf ''')
+st.write('''- https://dhsprogram.com/programming/wealth%20index/Steps_to_constructing_the_new_DHS_Wealth_Index.pdf ''')
 
 
 
