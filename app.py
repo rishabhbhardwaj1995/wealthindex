@@ -315,9 +315,9 @@ st.title("Wealth Index and Sanitation Index Exploration Tool")
 
 
 st.header("Methodology Used For Wealth Index")
-st.write('Step 1: Variables were collated which could accurately represent wealth in a household. Following variables were selected:')
+st.write('Step 1: Variables were collated which could accurately represent wealth in a household. The following variables were selected:')
 st.write('''- House Condition = 'Good' ''')
-st.write('''- Material of Roof = Machine made tiles or  GI/Metal/Asbestos sheet or Concrete''')
+st.write('''- Material of Roof = Machine-made tiles or  GI/Metal/Asbestos sheet or Concrete''')
 st.write('''- Material of Wall =  Concrete or Wood''')
 st.write('''- Material of Floor = Mosiac tiles or Cement''')
 st.write('''- Fuel Used for cooking = LPG or Electricity or Bio Gas''')
@@ -328,12 +328,12 @@ st.write('''- Has motorized 2 wheeler ''')
 st.write('''- Has Motorized 4 wheeler ''')
 st.write('''- Household structure type: 'Permanent' ''')
 st.write("")
-st.write(''' Step 2: After variables were collated they were placed against the area information which were 'Tehsil name' and 'District Name'
-         . *Principal Component Analysis* was applied on the data.''')
+st.write(''' Step 2: After variables were collated they were placed against the area information which was 'Tehsil name' and 'District Name'
+         . *Principal Component Analysis* was applied to the data.''')
 st.write("")
 st.write(''' Step 3: The first component from the Principal Component Analysis was used as the Wealth Index. Information captured by the first component is *62%* of the overall data.''')
 st.write("")
-st.write(''' Step 4: The wealth index was then split into 5 intervals which represents 5 Quintiles, 1 being lowest and 5 being highest. The ranges are as follows:''')
+st.write(''' Step 4: The wealth index was then split into 5 intervals which represents 5 Quintiles, **1 being lowest and 5 being highest**. The ranges are as follows:''')
 st.write('''- 1st quintile  *Wealth Index Value* < -1.620066''')
 st.write('''- 2nd quintile -1.620066 < *Wealth Index Value* < -1.012014''')
 st.write('''- 3rd quintile -1.012014 < *Wealth Index Value* < -0.276248''')
@@ -343,13 +343,13 @@ st.write('''- 5th quintile  *Wealth Index Value* > 1.238789''')
 st.markdown("***")
 
 st.header("Methodology Used For Sanitation Index")
-st.write('''Similar to the creation of wealth index, Sanitation Index was created by collating variables which are indicators of sanitary conidtions. 
-         *Principal Component Analysis* was applied on the data and the first component was used as the sanitation index. Information captured by first feature of PCA from the selected variables is *79%*. ''')
+st.write('''Similar to the creation of the wealth index, Sanitation Index was created by collating variables which are indicators of sanitary conditions. 
+         *Principal Component Analysis* was applied to the data and the first component was used as the sanitation index. Information captured by the first feature of PCA from the selected variables is *79%*. ''')
 st.write('''Variables used for creating the index:''')
 st.write('''- Source of Drinking Water: Tapwater from treated source or Borehole/Tubewell ''')
 st.write('''- Location of Drinking Water is Within Premises ''')
 st.write('''- Flush/pour flush latrine connected to	''Piped sewer system' or 'Septic tank' or 'Other system' ''')
-st.write('''- Households having bathroom with roof ''')
+st.write('''- Households having a bathroom with roof ''')
 st.write('''- Water outlet connected to closed or open drainage ''')
 st.write("")
 st.write('''Ranges of Quintiles are as follows:''')
@@ -361,25 +361,24 @@ st.write('''- 5th quintile  *Sanitation Index Value* > 1.145891''')
 
 st.markdown("***")
 st.header("How to use the tool")
-st.write('''- Sidebar consists the options for Wealth Index Quintiles, Rural or Urban, District Name and Tehsil Name.''')
-st.write('''- 4 tables at the start provides the distribution of wealth index at District level and at Teshil Level. 4th table list the Tehsil of the *selected District* from the sidebar menu.''')
-st.write('''- The bottom 4 graphs shows the distribution of sanitation index quintiles for the selected wealth index quintile which is *selected from the Sidebar menu*. ''')
-st.write('''- 4th graph visualize data only for the selected Tehsil and selected quintiles from the sidebar menu. ''')
+st.write('''- The sidebar consists of the options for Wealth Index Quintiles, Rural or Urban, District Name and Tehsil Name.''')
+st.write('''- 4 tables at the start provide the distribution of wealth index at District level and at Tehsil Level. 4th table list the Tehsil of the *selected District* from the sidebar menu.''')
+st.write('''- The bottom 4 graphs show the distribution of sanitation index quintiles for the selected wealth index quintile which is *selected from the Sidebar menu*. ''')
+st.write('''- 4th graph visualizes data only for the selected Tehsil and selected quintiles from the sidebar menu. ''')
 
 
 st.markdown("***")
 st.header("Insights")
-st.write('''- There exists a huge disparity in the distribution of wealth index in Urban Areas and Rural Areas. Urban areas have higher concentration of wealth index quintile '5' whereas rural areas have higher concentraion of low level wealth index quintiles.''')
-st.write('''- At an overall level there is high correlation between sanitation index and Wealth index. 
-         If you try different wealth index quitiles from the side bar menu you will observe the ditribution of sanition index quintiles is highly correlated with wealth index quintiles. Higher the wealth index quintile better the sanitation conidtions of the region.''')
-st.write('''- Urban areas with lower level of wealth index quitiles have better sanition quintiles distribution as compared to Rural areas. You can confirm it by switching between Rural and Urban option from the side bar menu for a given quintile. 
-         You will observe that for the same wealth index quintile Urban areas have better sanition quintile distribution.''')
+st.write('''- There exists a huge disparity in the distribution of the wealth index in Urban Areas and Rural Areas. Urban areas have a higher concentration of wealth index quintile '5' whereas rural areas have a higher concentration of low-level wealth index quintiles.''')
+st.write('''- At an overall level, there is a high correlation between the sanitation index and the wealth index.''') 
+st.write('''- If you try different wealth index quintiles from the sidebar menu you will observe the distribution of sanitation index quintiles is highly correlated with wealth index quintiles. Higher the wealth index quintile better the sanitation conditions of the region.''')
+st.write('''- Urban areas with lower levels of wealth index quintiles have better sanitation quintiles distribution as compared to Rural areas. You can confirm it by switching between the Rural and Urban options from the sidebar menu for a given quintile. You will observe that for the same wealth index quintile Urban areas have better sanitation quintile distribution.''')
 
 
 st.markdown("***")
 st.header("Conclusions")
-st.write('''- Awareness towards better sanition conditions might be an issue in Rural areas because Urban areas have more sanitary condition even if the wealth levels are same between the 2''')
-st.write('''- Disparity in wealth between Urban areas and Rural areas is concerning. Policies focused on wealth creation in rural areas is necessary to improve the living standards.''')
+st.write('''- Awareness towards better sanitation conditions might be an issue in Rural areas because Urban areas have more sanitary conditions even if the wealth levels are the same between the 2.''')
+st.write('''- The disparity in wealth between urban areas and rural areas is concerning. Policies focused on wealth creation in rural areas are necessary to improve living standards.''')
 
 
 
